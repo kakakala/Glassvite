@@ -1,4 +1,38 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// .header{
+//   background: #69F0AE;
+//   font-size: 64px;
+// }
+
+header{
+  .header-all{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img{
+    width: 80px;
+    height: auto;
+    padding-top: 16px;
+  }
+
+  ul{
+    width: 492px;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 767px) {
+  header{
+    ul{
+      flex-wrap: wrap;
+    }
+
+    li{
+      width: 50%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 45px;
+    }
+  }
 }

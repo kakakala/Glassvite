@@ -1,0 +1,82 @@
+$font14: 14px;
+$font16: 16px;
+$font20: 20px;
+$font36: 36px;
+
+
+
+.f-N36{
+    font-family: 'Noto Sans TC';
+    font-size: $font36;
+    color: #FFFFFF;
+}
+
+.f-N20{
+    font-family: 'Noto Sans TC';
+    font-size: $font20;
+    color: #FFFFFF;
+}
+
+.f-N16{
+    font-family: 'Noto Sans TC';
+    font-size: $font16;
+    color: #FFFFFF;
+}
+
+.f-N14{
+    font-family: 'Noto Sans TC';
+    font-size: $font14;
+    color: #FFFFFF;
+}
+
+.f-R16{
+    font-family: 'Roboto';
+    font-size: $font16;
+    color: #FFFFFF;
+}
+
+.bg-AA0601{
+    background-color: #AA0601;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.d-jcsb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+.mr64{
+    margin-right: 64px;
+}
+
+.mr48{
+    margin-right: 48px;
+}
+
+.mr32{
+    margin-right: 32px;
+}
+
+.mb32{
+    margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+
+    .f-N16-M{
+        font-size: $font16;
+    }
+}
