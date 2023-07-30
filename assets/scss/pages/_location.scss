@@ -1,0 +1,91 @@
+.location-title{
+    margin-top: 96px;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
+
+.location-map{
+    margin-bottom: 80px;
+}
+
+.location-card{
+    width: 526px;
+
+    .shopname{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 24px;
+    }
+
+    .shopdetail{
+        padding: 16px 0;
+        padding-left: 27px;
+    }
+
+    li{
+        border: 1px solid #00000020;
+        color: #212529;
+    }
+
+    span{
+        font-size: 18px;
+        margin-right: 11px;
+    }
+}
+
+@media(max-width: 992px){
+    .location-title{
+        margin-left: 36px;
+    }
+
+    .location-map{
+        display: flex;
+        flex-direction: column;
+        .location-card{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            .card-top{
+                width: 49%;
+            }
+
+            .card-btm{
+                width: 49%;
+            }
+
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .location-title{
+        font-family: $fontCh;
+        font-size: $font24;
+        font-weight: bold;
+        margin-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .location-map{
+        margin-bottom: 64px;
+        .location-card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .card-top{
+                width: 100%;
+            }
+    
+            .card-btm{
+                width: 100%;
+            }
+        }
+    
+    }    
+}

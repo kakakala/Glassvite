@@ -1,5 +1,10 @@
+
+@import './layout/variable';
+@import './layout/reset';
+@import './layout/all';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
+@import './pages/faq';
+@import './pages/location';

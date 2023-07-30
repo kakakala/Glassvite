@@ -1,14 +1,31 @@
 $font14: 14px;
 $font16: 16px;
 $font20: 20px;
+$font24: 24px;   
 $font36: 36px;
+$font48: 48px;
+$fontCh: 'Noto Sans TC';
+$fontEn:  'Roboto';
 
 
+
+.f-N48{
+    font-family: $fontCh;
+    font-size: $font48;
+    font-weight: bold;
+    color: #000;
+}
 
 .f-N36{
     font-family: 'Noto Sans TC';
     font-size: $font36;
     color: #FFFFFF;
+}
+
+.f-N24{
+    font-family: $fontCh;
+    font-size: $font24;
+    color: #000;
 }
 
 .f-N20{
