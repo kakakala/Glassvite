@@ -18,16 +18,13 @@ header{
   ul{
     width: 492px;
     justify-content: space-between;
-  }
-}
 
-
-@media (max-width: 767px) {
-  header{
-    ul{
+    @include mobile{
       flex-wrap: wrap;
     }
+  }
 
+  @include mobile{
     li{
       width: 50%;
       padding-top: 12px;
@@ -36,3 +33,19 @@ header{
     }
   }
 }
+
+
+// @media (max-width: 767px) {
+//   header{
+//     ul{
+//       flex-wrap: wrap;
+//     }
+
+//     li{
+//       width: 50%;
+//       padding-top: 12px;
+//       padding-bottom: 12px;
+//       padding-left: 45px;
+//     }
+//   }
+// }

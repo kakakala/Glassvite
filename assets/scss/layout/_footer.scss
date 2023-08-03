@@ -8,6 +8,10 @@ footer{
     padding-top: 48px;
     padding-bottom: 24px;
 
+    @include mobile{
+      display: none;
+    }
+
     ul{
       width: 464px;
       justify-content: space-between;
@@ -21,9 +25,24 @@ footer{
   .link{
     gap: 32px;
 
+    @include mobile{
+      gap: 8px;
+      display: block;
+    }
+
     img{
       width: 48px;
-      height: auto;      
+      height: auto;
+      
+      @include pad{
+        width: 40px;
+        height: auto;
+      }
+
+      @include mobile{
+        width: 24px;
+        height: auto;
+      }
     }
   }
 
@@ -31,6 +50,11 @@ footer{
     color: #FFFFFF;
     font-size: 36px;
     padding-right: 22px;
+
+    @include mobile{
+      font-size: 18px;
+      padding-right: 11px;
+    }
   }
 
   .footer-copyright{
@@ -38,52 +62,68 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
-  }
-}
 
-@media(max-width: 992px) {
-  .link img{
-    width: 40px;
-    height: auto;
-  }
-}
-
-@media (max-width: 767px) {
-  
-  footer{
-    .icons{
-      font-size: 18px;
-      padding-right: 11px;
-  }
-  }
-
-  .footer-menu{
-    display: none;
-  }
-
-  .link{
-    gap: 8px;
-    display: block;
-
-    img{
-      width: 24px;
-      height: auto;
-  }
-  }
-
-  .footer-copyright{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    ul{
+    @include mobile{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-    }
 
-    li{
-      margin-top: 8px;
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      li{
+        margin-top: 8px;
+      }
     }
-  } 
+  }
 }
+
+// @media(max-width: 992px) {
+//   .link img{
+//     width: 40px;
+//     height: auto;
+//   }
+// }
+
+// @media (max-width: 767px) {
+  
+//   footer{
+//     .icons{
+//       font-size: 18px;
+//       padding-right: 11px;
+//   }
+//   }
+
+//   .footer-menu{
+//     display: none;
+//   }
+
+//   .link{
+//     gap: 8px;
+//     display: block;
+
+//     img{
+//       width: 24px;
+//       height: auto;
+//   }
+//   }
+
+//   .footer-copyright{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+
+//     ul{
+//       display: flex;
+//       flex-direction: column;
+//       align-items: flex-start;
+//     }
+
+//     li{
+//       margin-top: 8px;
+//     }
+//   } 
+// }

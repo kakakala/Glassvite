@@ -91,8 +91,7 @@ $fontEn:  'Roboto';
     margin-bottom: 32px;
 }
 
-@media (max-width: 767px) {
-
+@include mobile{
     .f-N16-M{
         font-size: $font16;
     }

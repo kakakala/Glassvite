@@ -3,6 +3,19 @@
     margin-bottom: 32px;
     padding-left: 16px;
     border-left: 8px solid #9F1213;
+
+    @include pad{
+        margin-left: 36px;
+    }
+
+    @include mobile{
+        font-family: $fontCh;
+        font-size: $font24;
+        font-weight: bold;
+        margin-left: 12px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
 }
 
 .faq-q{
@@ -12,6 +25,10 @@
 .qa-menu{
     margin-top: 24px;
     margin-bottom: 80px;
+
+    @include mobile{
+        margin-bottom: 64px;
+    }
 
     h3{
         margin-bottom: 8px;
@@ -23,37 +40,45 @@
         margin-bottom: 32px;
         color: #000;
         width: 856px;
-    }
-}
 
-@media(max-width: 992px){
-
-    .faq-title{
-        margin-left: 36px;
-    }
-
-    .qa-menu{
-        p{
+        @include pad{
             width: 696px;
         }
-    }
-}
 
-@media(max-width: 767px){
-
-    .faq-title{
-        font-family: $fontCh;
-        font-size: $font24;
-        font-weight: bold;
-        margin-left: 12px;
-        margin-top: 40px;
-        margin-bottom: 24px;
-    }
-
-    .qa-menu{
-        margin-bottom: 64px;
-        p{
+        @include mobile{
             width: 348px;
         }
     }
 }
+
+// @media(max-width: 992px){
+
+//     .faq-title{
+//         margin-left: 36px;
+//     }
+
+//     .qa-menu{
+//         p{
+//             width: 696px;
+//         }
+//     }
+// }
+
+// @media(max-width: 767px){
+
+//     .faq-title{
+//         font-family: $fontCh;
+//         font-size: $font24;
+//         font-weight: bold;
+//         margin-left: 12px;
+//         margin-top: 40px;
+//         margin-bottom: 24px;
+//     }
+
+//     .qa-menu{
+//         margin-bottom: 64px;
+//         p{
+//             width: 348px;
+//         }
+//     }
+// }
