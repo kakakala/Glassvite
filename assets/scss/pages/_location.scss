@@ -18,6 +18,24 @@
     }
 }
 
+.chooseshop{
+    margin-bottom: 40px;
+
+    @include mobile{
+        margin-bottom: 24px;
+    }
+    select{
+        font-size: 18px;
+        margin-left: 16px;
+        padding: 6px 12px;
+        padding-right: 166px;
+        color: #495057;
+
+        @include mobile{
+            padding-right: 138px;
+        }
+    }
+}
 .location-map{
     margin-bottom: 80px;
 

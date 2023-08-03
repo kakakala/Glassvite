@@ -16,8 +16,13 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h2 class="location-title f-N48 container">門市據點</h2>
-    <p class="f-N24 container">選擇分店</p>
+    <h2 class="location-title f-N48 fw-bold container">門市據點</h2>
+    <label class="container d-flex chooseshop" for="shop">
+        <p class="f-N24 f-N16-M">選擇分店</p>
+        <select name="shop" id="shop">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+        </select>
+    </label>
         <div class="container d-jcsb location-map">
             <ul class="location-card">
                 <li class="card-top">
